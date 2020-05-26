@@ -1,7 +1,5 @@
 
 function App() {
-
-    document.cookie = 'SameSite=None Secure'
     
     React.useEffect(() => {
         stAnalytics.getInstance().sendPageViewEvent('home_page_viewed', {})
