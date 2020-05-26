@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task | SuperTokens</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+    <script type="text/javascript">
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load('pm0AQH3uf20CAIgeOBpO5l8BdpF3Texv');
+        analytics.page();
+        }}();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+
+    <script src="./analytics.js"></script>
+    <script type="text/babel">
+
+    function App() {
+
+    document.cookie = 'SameSite=None Secure'
+
+    React.useEffect(() => {
+        stAnalytics.getInstance().sendPageViewEvent('home_page_viewed', {})
+        // eslint-disable-next-line
+    },[])
+
+
+    return (
+    <div className="App">
+        <div className="button-container">
+            <a href="#!" className='btn red' onClick={button1Clicked}>button1</a>
+            <a href="#!" className='btn red' onClick={button2Clicked}>button2</a>
+        </div>
+    </div>
+    );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>
+
+</html>

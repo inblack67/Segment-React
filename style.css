@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.button-container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: red;
+    margin: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 600px){
+    .button-container{
+        flex-direction: column;
+    }
+}
