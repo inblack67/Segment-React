@@ -25,30 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
 
     <script src="./analytics.js"></script>
-    <script type="text/babel">
-
-    function App() {
-
-    document.cookie = 'SameSite=None Secure'
-
-    React.useEffect(() => {
-        stAnalytics.getInstance().sendPageViewEvent('home_page_viewed', {})
-        // eslint-disable-next-line
-    },[])
-
-
-    return (
-    <div className="App">
-        <div className="button-container">
-            <a href="#!" className='btn red' onClick={button1Clicked}>button1</a>
-            <a href="#!" className='btn red' onClick={button2Clicked}>button2</a>
-        </div>
-    </div>
-    );
-    }
-
-    ReactDOM.render(<App />, document.getElementById('root'))
-    </script>
+    <script type="text/babel" src="./react-app.js"></script>
 </body>
 
 </html>
