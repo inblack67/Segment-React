@@ -1,4 +1,6 @@
-Just open the index.html
+Segment API Integration With React App By Adding External Script. 
+
+Just open the index.html.
 If CORS give warning that requests has been blocked by source origin null, open index.html via live server.
 
 LOCALSTORAGE - internal-123
